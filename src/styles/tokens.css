@@ -1,0 +1,28 @@
+/**
+ * @file src/styles/tokens.css
+ * @purpose Root CSS custom properties for light and dark themes.
+ * @tags css, tokens, design-system, themes
+ */
+:root {
+  --bg: #F9FAFB;
+  --surface: #FFFFFF;
+  --border: #E5E7EB;
+  --text: #111827;
+  --secondary: #6B7280;
+  --accent: #2563EB;
+  --accent-hover: #1D4ED8;
+  --callout-note: #EFF6FF;
+  --callout-warning: #FFFBEB;
+}
+
+[data-theme="dark"] {
+  --bg: #0B0F17;
+  --surface: #111827;
+  --border: #1F2937;
+  --text: #F9FAFB;
+  --secondary: #9CA3AF;
+  --accent: #3B82F6;
+  --accent-hover: #60A5FA;
+  --callout-note: #1E293B;
+  --callout-warning: #422006;
+}

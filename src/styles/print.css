@@ -1,0 +1,31 @@
+/**
+ * @file src/styles/print.css
+ * @purpose Print-specific media styles for blog articles.
+ * @tags css, print, media-queries, blog
+ */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt;
+  }
+
+  header,
+  footer,
+  aside,
+  nav,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  .prose-article {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+  }
+}
